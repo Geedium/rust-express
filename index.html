@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div>Hydration works!</div>
+  <div id="collected">{{ success }}</div>
+  <script id="__SSR_DATA__" type="application/json">{}</script>
+  <script>
+    // mounted event
+    window.onload = () => {
+      const doc = document.getElementById("__SSR_DATA__");
+      const b = document.getElementById('collected');
+
+      const val = JSON.parse(doc.innerText);
+      b.innerText = val.success;
+    };
+  </script>
+</body>
+</html>
