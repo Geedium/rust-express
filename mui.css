@@ -1,0 +1,29 @@
+/* MATERIAL-UI */
+.button-container {
+    background-color: #F7F2FA;
+    border-width: 0;
+    border-radius: 20px;
+    border-style: none;
+    padding: 4px;
+}
+
+.button-container:hover {
+    cursor: pointer;
+    background-color: #dfdae2;
+}
+
+.button-container:active:hover {
+    background-color: #bcb8be;
+}
+
+a[btn] {
+    text-decoration: none;
+}
+
+/* a[href].button-container:hover {
+    
+} */
+
+.button-container:focus {
+    outline: none;
+}
